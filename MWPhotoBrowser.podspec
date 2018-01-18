@@ -4,12 +4,7 @@ Pod::Spec.new do |s|
   s.version = '2.1.3'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
-  s.description = <<-DESCRIPTION
-                  MWPhotoBrowser can display one or more images or videos by providing either UIImage
-                  objects, PHAsset objects, or URLs to library assets, web images/videos or local files.
-                  The photo browser handles the downloading and caching of photos from the web seamlessly.
-                  Photos can be zoomed and panned, and optional (customisable) captions can be displayed.
-                  DESCRIPTION
+
   s.screenshots = [
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser1.png',
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser2.png',
@@ -19,16 +14,16 @@ Pod::Spec.new do |s|
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
   ]
 
-  s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
+  s.homepage = 'https://github.com/shenguanjiejie/MWPhotoBrowser'
   s.author = { 'shenguanjiejie' => '835166018@qq.com' }
   s.social_media_url = 'https://github.com/shenguanjiejie'
 
   s.source = {
-    :git => 'https://github.com/shenguanjiejie/MWPhotoBrowser.git',
+    :git => 'https://github.com/shenguanjiejie/MWPhotoBrowser',
     :tag => '2.1.3'
   }
   s.platform = :ios, '8.0'
-  s.source_files = 'Pod/Classes/**/*'
+s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'MWPhotoBrowser' => ['Pod/Assets/*.png']
   }
