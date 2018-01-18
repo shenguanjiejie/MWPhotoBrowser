@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
   ]
 
-  s.homepage = 'https://github.com/shenguanjiejie/MWPhotoBrowser'
-  s.author = { 'shenguanjiejie' => '835166018@qq.com' }
-  s.social_media_url = 'https://github.com/shenguanjiejie'
+  s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
+  s.author = { 'Michael Waterfall' => 'michaelwaterfall@gmail.com' }
+  s.social_media_url = 'https://twitter.com/mwaterfall'
 
   s.source = {
     :git => 'https://github.com/shenguanjiejie/MWPhotoBrowser',
