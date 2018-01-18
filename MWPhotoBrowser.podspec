@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   ]
 
   s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
-  s.author = { 'Michael Waterfall' => 'michaelwaterfall@gmail.com' }
-  s.social_media_url = 'https://twitter.com/mwaterfall'
+  s.author = { 'shenguanjiejie' => '835166018@qq.com' }
+  s.social_media_url = 'https://github.com/shenguanjiejie'
 
   s.source = {
     :git => 'https://github.com/shenguanjiejie/MWPhotoBrowser.git',
