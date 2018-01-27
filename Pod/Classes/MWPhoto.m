@@ -14,7 +14,7 @@
 @interface MWPhoto () {
 
     BOOL _loadingInProgress;
-    id <SDWebImageOperation> _webImageOperation;
+    SDWebImageDownloadToken *_webImageOperation;
     PHImageRequestID _assetRequestID;
     PHImageRequestID _assetVideoRequestID;
         
@@ -351,7 +351,7 @@
 
 - (void)cancelAnyLoading {
     if (_webImageOperation != nil) {
-        [_webImageOperation cancel];
+        [_webImageOperation downloadOperationCancelToken];
         _loadingInProgress = NO;
     }
     [self cancelImageRequest];

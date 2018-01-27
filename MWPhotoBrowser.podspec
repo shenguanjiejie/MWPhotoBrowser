@@ -1,33 +1,33 @@
 Pod::Spec.new do |s|
 
   s.name = 'MWPhotoBrowser'
-  s.version = '2.1.3'
+  s.version = '2.1.5'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
 
-  s.screenshots = [
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser1.png',
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser2.png',
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser3.png',
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser4.png',
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser5.png',
-    'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
-  ]
+s.screenshots = [
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser1.png',
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser2.png',
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser3.png',
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser4.png',
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser5.png',
+'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
+]
 
-  s.homepage = 'https://github.com/shenguanjiejie/MWPhotoBrowser'
-  s.author = { 'shenguanjiejie' => '835166018@qq.com' }
-  s.social_media_url = 'https://github.com/shenguanjiejie'
+s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
+s.author = { 'Michael Waterfall' => 'michaelwaterfall@gmail.com' }
+s.social_media_url = 'https://twitter.com/mwaterfall'
 
-  s.source = {
-    :git => 'https://github.com/shenguanjiejie/MWPhotoBrowser',
-    :tag => '2.1.3'
-  }
-  s.platform = :ios, '8.0'
+s.source = {
+:git => 'https://github.com/shenguanjiejie/MWPhotoBrowser',
+:tag => '2.1.5'
+}
+s.platform = :ios, '8.0'
 s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MWPhotoBrowser' => ['Pod/Assets/*.png']
-  }
-  s.requires_arc = true
+s.resource_bundles = {
+'MWPhotoBrowser' => ['Pod/Assets/*.png']
+}
+s.requires_arc = true
 
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
