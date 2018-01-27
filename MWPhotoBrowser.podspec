@@ -23,6 +23,7 @@ s.source = {
 :tag => '2.1.6'
 }
 s.platform = :ios, '8.0'
+
 s.source_files = 'Pod/Classes/**/*'
 s.resource_bundles = {
 'MWPhotoBrowser' => ['Pod/Assets/*.png']
