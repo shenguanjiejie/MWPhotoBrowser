@@ -390,7 +390,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     }
     
     _viewHasAppearedInitially = YES;
-        
+    [self setControlsHidden:NO animated:NO permanent:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -1409,7 +1409,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     
     // Animations & positions
     CGFloat animatonOffset = 20;
-    CGFloat animationDuration = (animated ? 0.35 : 0);
+    CGFloat animationDuration = (animated ? 0.1 : 0);
     
     // Status bar
     if (!_leaveStatusBarAlone) {
@@ -1456,7 +1456,8 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
         CGFloat alpha = hidden ? 0 : 1;
 
         // Nav bar slides up on it's own on iOS 7+
-        [self.navigationController.navigationBar setAlpha:alpha];
+//        [self.navigationController.navigationBar setAlpha:alpha];
+        self.navigationController.navigationBar.hidden = hidden;
         
         // Toolbar
         _toolbar.frame = [self frameForToolbarAtOrientation:self.interfaceOrientation];
