@@ -33,12 +33,12 @@ s.requires_arc = true
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 1.0'
+  s.dependency 'MBProgressHUD'
   s.dependency 'DACircularProgress', '~> 2.3'
 
   # SDWebImage
   # 3.7.2 contains bugs downloading local files
   # https://github.com/rs/SDWebImage/issues/1109
-  s.dependency 'SDWebImage', '~> 4.2.0'
+  s.dependency 'SDWebImage'
 
 end
